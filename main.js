@@ -11,7 +11,7 @@ console.log ("getal1 = " + getal1);
 let getal3;
 getal3 = 3;
 console.log ("getal3 = " + getal3);
-// ikk rijg nu getal3 = 3 te zien in de console.
+// ik krijg nu getal3 = 3 te zien in de console.
 
 getal3 = 5;
 console.log ("getal3 = " + getal3);
