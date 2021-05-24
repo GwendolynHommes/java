@@ -53,13 +53,98 @@ let tw = 2;
 console.log (d+v*t/tw);
 //antwoord is 28
 
+
+//opdracht 9
 let number = 3;
 number--;
 console.log(number);
 //er wordt 1 opgeteld of afgetrokken van de gegeven waarde.
 //antwoorden zijn resp. 4 en 2
 
-//ik begin het te snappen en stop nu met javascript om verder te gaan met Salesforce.
-//het lijkt erg op c programmeren en andere talen. dus hier ga ik wel uitkomen.
+
+let nummer = 3;
+const som = ++nummer +2;
+console.log (som);
+
+//6. ++ wordt genegeerd als het erachter staat om date r al een + wordt gegeven om 2 op te tellen
+//8. ++ ervoor kan dus ook en dan wordt er geen verwarring gezaaid met +2
+
+let numberb = 3;
+numberb += 4;
+console.log (numberb);
+//10. uitkomst is 7. dus telt erbij op net als de = er niet zou staan.
+
+
+let getallen = 3;
+getallen  += 4;
+getallen -= 2;
+getallen /= 5;
+getallen *= 4;
+console.log (getallen); 
+//11. 3+4 = 7; 7-2=5; 5/5=1 en 1*4 is 4
+//uitkomst is 4
+
+
+//string opdrachten (opdracht 12 ev)
+
+const voor = 'Voornaam';
+const achter = 'Achternaam';
+console.log (voor + " + " + achter);
+//12. verschil is de quotes
+
+
+let opdr = 'opdracht';
+let cijfer = 7;
+let combinedtext = opdr + cijfer;
+console.log(combinedtext);
+//13. string en nummer kunnen gecombineerd worden. cijfer wordt dan als een string gezien en niet als een getal dat opgetelt moet worden bij een string.
+
+//14. ik gebruik hele tijd al single quotes omdat het een toestsaanslag minder is. :)
+
+let text = "terxt"
+text += 'another text';
+console.log (text);
+//15.  terxt another text
+//let text = "text another text"; console.log (text);
+
+//opdrachten met built in methods
+//Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het blok: 
+//1. charAt() geeft aan hoeveelste karakter in de string het is. let op 1e karakter is volgens javascripty 0.
+Let anystring = 'World';
+console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
+console.log("The character at index 1   is '" + anyString.charAt(1)   + "'");
+console.log("The character at index 2   is '" + anyString.charAt(2)   + "'");
+console.log("The character at index 3   is '" + anyString.charAt(3)   + "'");
+console.log("The character at index 4   is '" + anyString.charAt(4)   + "'");
+console.log("The character at index 999 is '" + anyString.charAt(999) + "'");
+
+//2. concat() met concat kun je strings aan elkaar vast koppelen. hetzelfde als met + of +=
+//voorkeur is dan ook de laatste twee te gebruiken.
+Let hello = 'Hello';
+console.log (hello.concat (Wereld));
+
+//3. slice() hiermee kun je een string opdelen doo rbepaalde gedeeltes van de string te gebruiken.
+//dit weer op basis van het zoveelste karakter vand e string (vergeet 0 niet!!)
+//4. split() hiermee kun je aangeven welk karakter gebruikt wordt om woorden uit elkaar te houden.
+//5. substr()hier mee kun je een deel van de string gebruiken.
+
+
+//opdrachten over conditions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
