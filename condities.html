@@ -16,23 +16,18 @@
 
 <script>
     function checknumber() {
-        if (number == 3) { label='dit is 3!!';} 
-        else {label = 'dit is geen 3';}
+        let waarde = Number(number.value);
+        if (waarde < 3) {label = 'Het ingevoerde getal is kleiner dan 3';}
+        if (waarde == 3) {label='Het ingevoerde getal is gelijk aan 3';} 
+        if (waarde > 4 && waarde < 11) {label='Het ingevoerde getal is groter dan 4';} 
+        if (waarde >= 11) {label='Het ingevoerde getal is gelijk aan of groter dan 11';} 
+       else {label='dit is een ander getal dan gespecificeerd'}
         console.log(label);
     }
 //indien ingevoerd getal 3 is dan melding dat dit 3 is.
 
 
-//voorbeeldfunctie met If ELSE statement:
-    function testNum(a) {
-        let result;
-        if (a > 0) {result = 'positive';} 
-        else {result = 'NOT positive';
-    }
-    return result;
-    }
-console.log(testNum(-5));
-// expected output: "NOT positive"
+
 
 </script>
 </body>
