@@ -110,18 +110,18 @@ console.log (text);
 //opdrachten met built in methods
 //Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het blok: 
 //1. charAt() geeft aan hoeveelste karakter in de string het is. let op 1e karakter is volgens javascripty 0.
-Let anystring = 'World';
-console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
-console.log("The character at index 1   is '" + anyString.charAt(1)   + "'");
-console.log("The character at index 2   is '" + anyString.charAt(2)   + "'");
-console.log("The character at index 3   is '" + anyString.charAt(3)   + "'");
-console.log("The character at index 4   is '" + anyString.charAt(4)   + "'");
-console.log("The character at index 999 is '" + anyString.charAt(999) + "'");
+//Let anystring = 'World';
+//console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
+//console.log("The character at index 1   is '" + anyString.charAt(1)   + "'");
+//console.log("The character at index 2   is '" + anyString.charAt(2)   + "'");
+//console.log("The character at index 3   is '" + anyString.charAt(3)   + "'");
+//console.log("The character at index 4   is '" + anyString.charAt(4)   + "'");
+//console.log("The character at index 999 is '" + anyString.charAt(999) + "'");
 
 //2. concat() met concat kun je strings aan elkaar vast koppelen. hetzelfde als met + of +=
 //voorkeur is dan ook de laatste twee te gebruiken.
-Let hello = 'Hello';
-console.log (hello.concat (Wereld));
+//Let hello = 'Hello';
+//console.log (hello.concat (Wereld));
 
 //3. slice() hiermee kun je een string opdelen doo rbepaalde gedeeltes van de string te gebruiken.
 //dit weer op basis van het zoveelste karakter vand e string (vergeet 0 niet!!)
