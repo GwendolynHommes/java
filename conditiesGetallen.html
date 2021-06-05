@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gwendolyn Getallen</title>
+  </head>
+  <body>
+    &nbsp;<input type="number" name="number" id="number" /> 
+    &nbsp;<button id="btn" onclick="checkNumber()"> Klik hier </button>
+    
+    <div><span id="label"></span></div>
+
+    <script>
+      function checkNumber() {
+        const numberInput = document.getElementById("number").value;
+        const label = document.getElementById("label");
+        if (numberInput < 3) {
+          label.innerText = "Het ingevoerde getal is kleiner dan 3";
+        } else if (numberInput == 3) {
+          label.innerText = "Het ingevoerde getal is gelijk aan 3";
+        } else if (numberInput > 3 && numberInput <= 5) {
+          label.innerText = "Het ingevoerde getal is 4 of 5";
+        } else if (numberInput > 5 && numberInput < 10) {
+           label.innerText = "Het ingevoerde getal is tussen 5 en 10";
+        } else if (numberInput >= 11 && numberInput < 13) {
+          label.innerText = "Het ingevoerde getal is groter of gelijk aan 11";
+        } else if (numberInput >= 13 && numberInput < 20) {
+        label.innerText = "Het ingevoerde getal is tussen 13 en 20";
+        } else if (numberInput == 20 || numberInput == 23) {
+        label.innerText = "Het ingevoerde getal is 20 of 23";
+        } else if ((numberInput >= 30 && numberInput <= 35) || (numberInput >= 40 && numberInput <= 45)) {
+        label.innerText = "Het ingevoerde getal is tussen 30 en 35 of tussen 40 en 45";
+        } else if ( label.innerText = "Er is niets te melden over dit getal");
+         
+      }
+    </script>
+    
+  </body>
+</html>

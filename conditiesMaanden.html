@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gwendolyn Maanden</title>
+</head>
+<body>
+  <h1> Zet het maandnummer om naar naam van de maand.</h1>
+  &nbsp;<input type="number" name="number" id="number" /> 
+  &nbsp;<button id="knop" onclick="startfunctie()"> Klik hier </button>
+  
+  &nbsp;<div id="label"></div>
+
+  <script>
+    function startfunctie() {
+      const maandnummer = document.getElementById("number").value;
+      const label = document.getElementById("label");
+      switch (maandnummer) {
+      case '1': label.innerText = "De maand voor nummer" + maandnummer + " is Januari"; 
+         break;
+      case '2': label.innerText ="De maand voor nummer" + maandnummer + " is Februari";
+        break;
+      case '3': label.innerText ="De maand voor nummer " + maandnummer + " is Maart";
+        break;
+      case '4': label.innerText ="De maand voor nummer " + maandnummer + " is April";
+        break;
+      case '5': label.innerText ="De maand voor nummer " + maandnummer + " is Mei";
+        break;
+      case '6': label.innerText ="De maand voor nummer " + maandnummer + " is Juni";
+        break;
+      case '7': label.innerText ="De maand voor nummer " + maandnummer + " is Juli";
+       break;
+      case '8': label.innerText ="De maand voor nummer " + maandnummer + " is Augustus";
+        break;
+      case '9': label.innerText = "De maand voor nummer " + maandnummer + " is September";
+        break;
+      case '10': label.innerText ="De maand voor nummer " + maandnummer + " is Oktober";
+        break;
+      case '11': label.innerText ="De maand voor nummer " + maandnummer + " is November";
+        break;
+      case '12': label.innerText ="De maand voor nummer " + maandnummer + " is December";
+        break;
+      default: label.innerText ="Oh oo...Something went horribly wrong...";
+      }
+
+  }
+ </script>
+</body>
+</html>

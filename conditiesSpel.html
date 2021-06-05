@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gwendolyn's Spelletje</title>
+    <style>
+        .words button {
+            position: relative;
+            border: 1px solid black;
+            border-radius: .5em;
+            background-color: white;
+            padding: .5em;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+            z-index: 1;
+        }
+
+        .words button:focus {
+            outline: none;
+            background-color: grey;
+        }
+
+        .words .fg {
+            position: absolute;
+            content: '';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: white;
+            z-index: 2;
+            transition: width .3s ease-out;
+            overflow: hidden;
+        }
+
+        .words button:hover .fg {
+            width: 0;
+            z-index: 1;
+        }
+
+        .words button:focus .fg {
+            width: 0;
+        }
+
+        .answer {
+            font-size: 2em;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Raad het woord</h1>
+    <section>
+        <div class="words">
+            <button onclick="guess(0)">
+                <div class="fg">Show</div>
+                <span>Together</span>
+            </button>
+            <button onclick="guess(1)">
+                <div class="fg">Show</div>
+                <span>Teamwork</span>
+            </button>
+            <button onclick="guess(2)">
+                <div class="fg">Show</div>
+                <span>Scrum</span>
+            </button>
+            <button onclick="guess(3)">
+                <div class="fg">Show</div>
+                <span>Individual</span>
+            </button>
+            <button onclick="guess(4)">
+                <div class="fg">Show</div>
+                <span>Moments</span>
+            </button>
+            <button onclick="guess(5)">
+                <div class="fg">Show</div>
+                <span>Like</span>
+            </button>
+            <button onclick="guess(6)">
+                <div class="fg">Show</div>
+                <span>Dislike</span>
+            </button>
+            <button onclick="guess(7)">
+                <div class="fg">Show</div>
+                <span>Money</span>
+            </button>
+            <button onclick="guess(8)">
+                <div class="fg">Show</div>
+                <span>Important</span>
+            </button>
+        </div>&nbsp;
+    </section>
+    <div>
+        <span>&nbsp;&nbsp;Aantal keer niet goed geraden: <span id="count">0</span></span>
+        <br>&nbsp;
+        <span id="label1"></span><span id="label2" class=answer></span>
+
+    </div>
+    <script>
+        const words = ["Together", "Teamwork", "Scrum", "Individual", "Moments", "Like", "Dislike", "Money", "Important"];
+        const raadWoord = words[Math.round(Math.random() * 8)];
+
+        let guesses = 0;
+        let spelen = true;
+
+        function guess(obj) {
+            if (spelen) {
+
+                if (words[obj] === raadWoord) {
+                    document.getElementById("count").innerHTML = guesses;
+                    document.getElementById("label1").innerHTML = "Gefeliciteerd! Je hebt het woord geraden, het is " ;
+                    document.getElementById("label2").innerHTML = raadWoord;
+                    spelen = false;
+                } else {
+                    guesses++;
+                    document.getElementById("count").innerHTML = guesses;
+                }
+
+                if (guesses >= 3) {
+                    spelen = false;
+                    document.getElementById("count").innerHTML = guesses;
+                    document.getElementById("label1").innerHTML = "Game over! Het goede woord is ";
+                    document.getElementById("label2").innerHTML = raadWoord;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
